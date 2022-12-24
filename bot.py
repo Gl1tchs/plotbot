@@ -1,15 +1,14 @@
 import os
-import discord
-from dotenv import load_dotenv
-import numpy as np
 import sympy
-
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
-from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
+import discord
+import numpy as np
 from io import BytesIO
+from dotenv import load_dotenv
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 
 load_dotenv()
+
 TOKEN = os.getenv('DISCORD_TOKEN')
 
 bot = discord.Bot(intents=discord.Intents.all())
